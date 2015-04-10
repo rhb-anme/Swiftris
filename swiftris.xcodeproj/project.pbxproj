@@ -23,6 +23,14 @@
 		F50D48851ACB0A7C00FA0430 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50D48841ACB0A7C00FA0430 /* Array2D.swift */; };
 		F50D48871ACB8DE900FA0430 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50D48861ACB8DE800FA0430 /* Block.swift */; };
 		F50D48891ACB9A2300FA0430 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50D48881ACB9A2300FA0430 /* Shape.swift */; };
+		F54527D61AD5EFF2001C3701 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54527D51AD5EFF2001C3701 /* TransitionManager.swift */; };
+		F54527D81AD7321F001C3701 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54527D71AD7321F001C3701 /* HomeViewController.swift */; };
+		F54527DC1AD74653001C3701 /* GameKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54527DB1AD74653001C3701 /* GameKitHelper.swift */; };
+		F58260971AD21D1400CDB639 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F58260921AD21D1400CDB639 /* bomb.mp3 */; };
+		F58260981AD21D1400CDB639 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F58260931AD21D1400CDB639 /* drop.mp3 */; };
+		F58260991AD21D1400CDB639 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F58260941AD21D1400CDB639 /* gameover.mp3 */; };
+		F582609A1AD21D1400CDB639 /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F58260951AD21D1400CDB639 /* levelup.mp3 */; };
+		F582609B1AD21D1400CDB639 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F58260961AD21D1400CDB639 /* theme.mp3 */; };
 		F5A6581F1ACF646A005E982B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A6581E1ACF646A005E982B /* Images.xcassets */; };
 		F5ADD4011ACDB68800581138 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ADD4001ACDB68800581138 /* SquareShape.swift */; };
 		F5ADD4031ACDBA2000581138 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ADD4021ACDBA2000581138 /* TShape.swift */; };
@@ -32,6 +40,7 @@
 		F5ADD40B1ACDBC3700581138 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ADD40A1ACDBC3700581138 /* SShape.swift */; };
 		F5ADD40D1ACDBC5300581138 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ADD40C1ACDBC5300581138 /* ZShape.swift */; };
 		F5ADD40F1ACDC1B300581138 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ADD40E1ACDC1B300581138 /* Swiftris.swift */; };
+		F5E34C6A1AD5B4EA00216409 /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E34C691AD5B4EA00216409 /* options.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +74,14 @@
 		F50D48841ACB0A7C00FA0430 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array2D.swift; path = ../Array2D.swift; sourceTree = "<group>"; };
 		F50D48861ACB8DE800FA0430 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		F50D48881ACB9A2300FA0430 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = ../Shape.swift; sourceTree = "<group>"; };
+		F54527D51AD5EFF2001C3701 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		F54527D71AD7321F001C3701 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F54527DB1AD74653001C3701 /* GameKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameKitHelper.swift; sourceTree = "<group>"; };
+		F58260921AD21D1400CDB639 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bomb.mp3; path = Blocs/Sounds/bomb.mp3; sourceTree = "<group>"; };
+		F58260931AD21D1400CDB639 /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = drop.mp3; path = Blocs/Sounds/drop.mp3; sourceTree = "<group>"; };
+		F58260941AD21D1400CDB639 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameover.mp3; path = Blocs/Sounds/gameover.mp3; sourceTree = "<group>"; };
+		F58260951AD21D1400CDB639 /* levelup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = levelup.mp3; path = Blocs/Sounds/levelup.mp3; sourceTree = "<group>"; };
+		F58260961AD21D1400CDB639 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = theme.mp3; path = Blocs/Sounds/theme.mp3; sourceTree = "<group>"; };
 		F5A6581E1ACF646A005E982B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5ADD4001ACDB68800581138 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
 		F5ADD4021ACDBA2000581138 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
@@ -74,6 +91,7 @@
 		F5ADD40A1ACDBC3700581138 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		F5ADD40C1ACDBC5300581138 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 		F5ADD40E1ACDC1B300581138 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
+		F5E34C691AD5B4EA00216409 /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = options.png; path = Blocs/options.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,7 @@
 		F50D48441ACB010800FA0430 = {
 			isa = PBXGroup;
 			children = (
+				F54527DB1AD74653001C3701 /* GameKitHelper.swift */,
 				F50D484F1ACB010900FA0430 /* swiftris */,
 				F50D48691ACB010900FA0430 /* swiftrisTests */,
 				F50D484E1ACB010900FA0430 /* Products */,
@@ -120,6 +139,7 @@
 				F50D48861ACB8DE800FA0430 /* Block.swift */,
 				F50D48561ACB010900FA0430 /* GameScene.swift */,
 				F50D48581ACB010900FA0430 /* GameViewController.swift */,
+				F54527D71AD7321F001C3701 /* HomeViewController.swift */,
 				F5ADD40E1ACDC1B300581138 /* Swiftris.swift */,
 				F50D48881ACB9A2300FA0430 /* Shape.swift */,
 				F5ADD4001ACDB68800581138 /* SquareShape.swift */,
@@ -130,6 +150,7 @@
 				F5ADD40A1ACDBC3700581138 /* SShape.swift */,
 				F5ADD40C1ACDBC5300581138 /* ZShape.swift */,
 				F50D485A1ACB010900FA0430 /* Main.storyboard */,
+				F54527D51AD5EFF2001C3701 /* TransitionManager.swift */,
 				F5A6581E1ACF646A005E982B /* Images.xcassets */,
 				F50D485F1ACB010900FA0430 /* LaunchScreen.xib */,
 				F50D48761ACB028900FA0430 /* Blocs */,
@@ -141,6 +162,12 @@
 		F50D48501ACB010900FA0430 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F58260921AD21D1400CDB639 /* bomb.mp3 */,
+				F58260931AD21D1400CDB639 /* drop.mp3 */,
+				F58260941AD21D1400CDB639 /* gameover.mp3 */,
+				F58260951AD21D1400CDB639 /* levelup.mp3 */,
+				F58260961AD21D1400CDB639 /* theme.mp3 */,
+				F5E34C691AD5B4EA00216409 /* options.png */,
 				F50D48781ACB02C300FA0430 /* background.png */,
 				F50D48791ACB02C300FA0430 /* background@2x.png */,
 				F50D487A1ACB02C300FA0430 /* gameboard.png */,
@@ -253,12 +280,18 @@
 				F5A6581F1ACF646A005E982B /* Images.xcassets in Resources */,
 				F50D487E1ACB02C300FA0430 /* background.png in Resources */,
 				F50D48611ACB010900FA0430 /* LaunchScreen.xib in Resources */,
+				F582609A1AD21D1400CDB639 /* levelup.mp3 in Resources */,
 				F50D48801ACB02C300FA0430 /* gameboard.png in Resources */,
+				F58260971AD21D1400CDB639 /* bomb.mp3 in Resources */,
 				F50D48821ACB02C300FA0430 /* whitebg.png in Resources */,
+				F58260991AD21D1400CDB639 /* gameover.mp3 in Resources */,
 				F50D487F1ACB02C300FA0430 /* background@2x.png in Resources */,
+				F5E34C6A1AD5B4EA00216409 /* options.png in Resources */,
 				F50D48831ACB02C300FA0430 /* whitebg@2x.png in Resources */,
 				F50D485C1ACB010900FA0430 /* Main.storyboard in Resources */,
 				F50D48811ACB02C300FA0430 /* gameboard@2x.png in Resources */,
+				F58260981AD21D1400CDB639 /* drop.mp3 in Resources */,
+				F582609B1AD21D1400CDB639 /* theme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +315,16 @@
 				F5ADD4091ACDBC2100581138 /* JShape.swift in Sources */,
 				F50D48891ACB9A2300FA0430 /* Shape.swift in Sources */,
 				F50D48851ACB0A7C00FA0430 /* Array2D.swift in Sources */,
+				F54527D61AD5EFF2001C3701 /* TransitionManager.swift in Sources */,
 				F5ADD4051ACDBBD200581138 /* LineShape.swift in Sources */,
 				F5ADD40B1ACDBC3700581138 /* SShape.swift in Sources */,
 				F5ADD4031ACDBA2000581138 /* TShape.swift in Sources */,
 				F50D48871ACB8DE900FA0430 /* Block.swift in Sources */,
+				F54527D81AD7321F001C3701 /* HomeViewController.swift in Sources */,
 				F5ADD40F1ACDC1B300581138 /* Swiftris.swift in Sources */,
 				F50D48591ACB010900FA0430 /* GameViewController.swift in Sources */,
 				F5ADD40D1ACDBC5300581138 /* ZShape.swift in Sources */,
+				F54527DC1AD74653001C3701 /* GameKitHelper.swift in Sources */,
 				F50D48531ACB010900FA0430 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +485,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = swiftrisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftris.app/swiftris";
@@ -464,6 +501,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = swiftrisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftris.app/swiftris";

@@ -112,22 +112,19 @@ class Shape: Hashable, Printable {
         }
     }
 
-// Removed Original Code
-
+    
     final func rotateBlocks(orientation: Orientation) {
-        
         if let blockRowColumnTranslation:Array<(columnDiff: Int, rowDiff: Int)> = blockRowColumnPositions[orientation] {
-            
-            for var idx = 0; idx < blockRowColumnTranslation.count; idx++
-            {
-                let tuple = blockRowColumnTranslation[idx]
-                blocks[idx].column = column + tuple.columnDiff
-                blocks[idx].row = row + tuple.rowDiff
+            for (idx, (columnDiff:Int, rowDiff:Int)) in enumerate(blockRowColumnTranslation) {
+                blocks[idx].column = column + columnDiff
+                blocks[idx].row = row + rowDiff
             }
         }
     }
     
-// Removed Original Code 
+
+    
+
     
     final func rotateClockwise() {
         let newOrientation = Orientation.rotate(orientation, clockwise: true)

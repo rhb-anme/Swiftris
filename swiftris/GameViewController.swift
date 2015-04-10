@@ -9,21 +9,47 @@
 import UIKit
 import SpriteKit
 
+
 class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognizerDelegate {
     
+    var gameMode: GameMode = .Classic;
     var scene: GameScene!
     var swiftris:Swiftris!
+    var homeController: HomeViewController?
     var panPointReference:CGPoint?
     
+
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var levelLabel: UILabel!
+    
+    //@IBOutlet weak var timerLabel: UILabel!
+    @IBAction func optionsButton(sender: UIButton, forEvent event: UIEvent) {
+    
+        // This is where the work for our pause menu will go.
+        
+        
+    }
+
+    let transitionManager = TransitionManager()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // this gets a reference to the screen that we're about to transition to
+        let toViewController = segue.destinationViewController as UIViewController
+        
+        // instead of using the default transition animation, we'll ask
+        // the segue to use our custom TransitionManager object to manage the transition animation
+        toViewController.transitioningDelegate = self.transitionManager
+     
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Configure the view.
-        let skView = view as! SKView
+        let skView = view as SKView
         skView.multipleTouchEnabled = false
         
         // Create and configure the scene.
@@ -33,18 +59,47 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         
         swiftris = Swiftris()
         swiftris.delegate = self
-        swiftris.beginGame()
+        
         
         // Present the scene.
         skView.presentScene(scene)
+        swiftris.beginGame()
+        //optionsButton.setTitle("start", forState: UIControlState.Normal)
+        //modeLabel.text = (gameMode == GameMode.Classic ? "Classic" : "Timed")
+        pauseGame()
 
 
     }
     
-    //override func prefersStatusBarHidden() -> Bool {
-    //    return true
-    //}
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        
+    }
+//    override func prefersStatusBarHidden() -> Bool {
+//        return true
+//    }
     
+    @IBAction func pauseGame() {
+        
+        if (self.scene.view?.paused == true) {
+            self.scene.view?.paused = false;
+            self.scene.startTicking();
+        }
+            
+//        if (gameMode != GameMode.Classic) {
+//            self.swiftris.timer = NSTimer.scheduledTimerWithTimeInterval(self.swiftris.timeLeftAfterPausing, target: swiftris, selector:Selector("levelUp"), userInfo: nil, repeats: false)
+//            self.swiftris.timerFinishedAt = NSDate(timeIntervalSinceNow: self.swiftris.timeLeftAfterPausing)
+//        }
+            
+           // self.optionsButton.setTitle("Pause", forState: UIControlState.Normal)
+       else {
+            self.scene.view?.paused = true;
+            self.scene.stopTicking();
+//            self.swiftris.timer.invalidate();
+//            self.swiftris.timeLeftAfterPausing = self.swiftris.timerFinishedAt.timeIntervalSinceDate(NSDate())
+//
+        
+    }
+    }
 
     @IBAction func didTap(sender: UITapGestureRecognizer) {
         swiftris.rotateShape()

@@ -10,31 +10,31 @@
 	<string>swiftris</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5450119CCA2DD394E9078F73A3071326A1F877FC</key>
-		<string>https://github.com/Bloc/ios-exercises.git</string>
+		<key>58BA1D5DA230C87744B90E4064999D5C1E2C022E</key>
+		<string>https://github.com/rhb-anme/Swiftris.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>swiftris/swiftris.xcodeproj</string>
+	<string>swiftris.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5450119CCA2DD394E9078F73A3071326A1F877FC</key>
-		<string>../../..</string>
+		<key>58BA1D5DA230C87744B90E4064999D5C1E2C022E</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Bloc/ios-exercises.git</string>
+	<string>https://github.com/rhb-anme/Swiftris.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5450119CCA2DD394E9078F73A3071326A1F877FC</string>
+	<string>58BA1D5DA230C87744B90E4064999D5C1E2C022E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5450119CCA2DD394E9078F73A3071326A1F877FC</string>
+			<string>58BA1D5DA230C87744B90E4064999D5C1E2C022E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ios-exercises</string>
+			<string>Swiftris</string>
 		</dict>
 	</array>
 </dict>

@@ -51,13 +51,21 @@ class GameScene: SKScene {
         shapeLayer.addChild(gameBoard)
         gameLayer.addChild(shapeLayer)
         
-        runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
+        //runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
+        }
+        func playSound(sound: String) {
+        runAction(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: false))
         }
     
-    // #2
-    func playSound(sound:String) {
-        runAction(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
+        func stopGameMusic() {
+        self.removeActionForKey ("themeSong")
         }
+    
+    
+    // #2
+    //func playSound(sound:String) {
+      //  runAction(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
+        //}
     
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
@@ -186,6 +194,7 @@ func animateCollapsingLines(linesToRemove: Array<Array<Block>>, fallenBlocks: Ar
     // #7
     runAction(SKAction.waitForDuration(longestDuration), completion:completion)
 }
+
 }
 
 
