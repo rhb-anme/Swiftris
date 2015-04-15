@@ -1,12 +1,10 @@
 //
 //  Block.swift
-//  swiftris
+//  Swiftris
 //
 //  Created by RH Blanchfield on 3/31/15.
 //  Copyright (c) 2015 artchiteq. All rights reserved.
 //
-
-
 
 import SpriteKit
 
@@ -38,23 +36,22 @@ enum BlockColor: Int, Printable {
     }
     
     static func random() -> BlockColor {
-        return BlockColor(rawValue:Int(arc4random_uniform(NumberOfColors)))!
+        return BlockColor(rawValue: Int(arc4random_uniform(NumberOfColors)))!
     }
 }
 
 class Block: Hashable, Printable {
+    
     // Constants
     let color: BlockColor
     
-    // Variables
+    // Properties
     var column: Int
     var row: Int
-    
-    // Lazy loading
     var sprite: SKSpriteNode?
     
     var spriteName: String {
-        return color.description
+        return color.spriteName
     }
     
     var hashValue: Int {
@@ -62,7 +59,7 @@ class Block: Hashable, Printable {
     }
     
     var description: String {
-        return "\(color) (\(column), \(row))"
+        return "\(color): [\(column), \(row)]"
     }
     
     init(column:Int, row:Int, color:BlockColor) {
@@ -71,7 +68,7 @@ class Block: Hashable, Printable {
         self.color = color
     }
 }
-
+    
 func ==(lhs: Block, rhs: Block) -> Bool {
-    return lhs.column == rhs.column && lhs.row == rhs.row && lhs.color.rawValue == rhs.color.rawValue
+    return lhs.color == rhs.color && lhs.row == rhs.row && lhs.color.rawValue == rhs.color.rawValue
 }

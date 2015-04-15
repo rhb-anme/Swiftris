@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>swiftris.xcscheme</key>
+		<key>Swiftris.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F50D484C1ACB010900FA0430</key>
+		<key>0D79588C1A12DAC900BE78CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F50D48651ACB010900FA0430</key>
+		<key>0D7958A51A12DAC900BE78CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,14 +1,14 @@
 //
 //  SquareShape.swift
-//  swiftris
+//  Swiftris
 //
-//  Created by RH Blanchfield on 4/2/15.
+//  Created by RH Blanchfield on 3/31/15.
 //  Copyright (c) 2015 artchiteq. All rights reserved.
 //
 
-class SquareShape:Shape {
+class SquareShape: Shape {
     /*
-    
+    // #1
     | 0•| 1 |
     | 2 | 3 |
     
@@ -20,10 +20,10 @@ class SquareShape:Shape {
     
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [
-            Orientation.Zero:       [(0, 0), (1, 0), (0, 1), (1, 1)],
-            Orientation.OneEighty:  [(0, 0), (1, 0), (0, 1), (1, 1)],
-            Orientation.Ninety:     [(0, 0), (1, 0), (0, 1), (1, 1)],
-            Orientation.TwoSeventy: [(0, 0), (1, 0), (0, 1), (1, 1)]
+            Orientation.Zero: [(0,0), (1, 0), (0, 1), (1, 1)],
+            Orientation.OneEighty: [(0,0), (1, 0), (0, 1), (1, 1)],
+            Orientation.Ninety: [(0,0), (1, 0), (0, 1), (1, 1)],
+            Orientation.TwoSeventy: [(0,0), (1, 0), (0, 1), (1, 1)]
         ]
     }
     
@@ -35,5 +35,4 @@ class SquareShape:Shape {
             Orientation.TwoSeventy: [blocks[ThirdBlockIdx], blocks[FourthBlockIdx]]
         ]
     }
-    
 }

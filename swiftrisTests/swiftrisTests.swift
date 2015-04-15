@@ -1,6 +1,6 @@
 //
-//  swiftrisTests.swift
-//  swiftrisTests
+//  SwiftrisTests.swift
+//  SwiftrisTests
 //
 //  Created by RH Blanchfield on 3/31/15.
 //  Copyright (c) 2015 artchiteq. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class swiftrisTests: XCTestCase {
+class SwiftrisTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

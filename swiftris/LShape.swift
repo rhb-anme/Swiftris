@@ -1,8 +1,8 @@
 //
 //  LShape.swift
-//  swiftris
+//  Swiftris
 //
-//  Created by RH Blanchfield on 4/2/15.
+//  Created by RH Blanchfield on 3/31/15.
 //  Copyright (c) 2015 artchiteq. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ class LShape:Shape {
     | 2 | 3 |
     
     Orientation 90
+    
     •
     | 2 | 1 | 0 |
     | 3 |

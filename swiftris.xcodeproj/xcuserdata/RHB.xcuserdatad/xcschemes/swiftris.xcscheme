@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0620"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F50D484C1ACB010900FA0430"
-               BuildableName = "swiftris.app"
-               BlueprintName = "swiftris"
-               ReferencedContainer = "container:swiftris.xcodeproj">
+               BlueprintIdentifier = "0D79588C1A12DAC900BE78CB"
+               BuildableName = "Swiftris.app"
+               BlueprintName = "Swiftris"
+               ReferencedContainer = "container:Swiftris.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F50D48651ACB010900FA0430"
-               BuildableName = "swiftrisTests.xctest"
-               BlueprintName = "swiftrisTests"
-               ReferencedContainer = "container:swiftris.xcodeproj">
+               BlueprintIdentifier = "0D7958A51A12DAC900BE78CB"
+               BuildableName = "SwiftrisTests.xctest"
+               BlueprintName = "SwiftrisTests"
+               ReferencedContainer = "container:Swiftris.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F50D48651ACB010900FA0430"
-               BuildableName = "swiftrisTests.xctest"
-               BlueprintName = "swiftrisTests"
-               ReferencedContainer = "container:swiftris.xcodeproj">
+               BlueprintIdentifier = "0D7958A51A12DAC900BE78CB"
+               BuildableName = "SwiftrisTests.xctest"
+               BlueprintName = "SwiftrisTests"
+               ReferencedContainer = "container:Swiftris.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F50D484C1ACB010900FA0430"
-            BuildableName = "swiftris.app"
-            BlueprintName = "swiftris"
-            ReferencedContainer = "container:swiftris.xcodeproj">
+            BlueprintIdentifier = "0D79588C1A12DAC900BE78CB"
+            BuildableName = "Swiftris.app"
+            BlueprintName = "Swiftris"
+            ReferencedContainer = "container:Swiftris.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F50D484C1ACB010900FA0430"
-            BuildableName = "swiftris.app"
-            BlueprintName = "swiftris"
-            ReferencedContainer = "container:swiftris.xcodeproj">
+            BlueprintIdentifier = "0D79588C1A12DAC900BE78CB"
+            BuildableName = "Swiftris.app"
+            BlueprintName = "Swiftris"
+            ReferencedContainer = "container:Swiftris.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F50D484C1ACB010900FA0430"
-            BuildableName = "swiftris.app"
-            BlueprintName = "swiftris"
-            ReferencedContainer = "container:swiftris.xcodeproj">
+            BlueprintIdentifier = "0D79588C1A12DAC900BE78CB"
+            BuildableName = "Swiftris.app"
+            BlueprintName = "Swiftris"
+            ReferencedContainer = "container:Swiftris.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

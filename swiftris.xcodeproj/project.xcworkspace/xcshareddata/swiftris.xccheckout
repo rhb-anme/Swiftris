@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FAD66645-0811-480F-BBED-B5070D4FC56E</string>
+	<string>E9DA8686-A2E4-487E-88E0-1E39488589A7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>swiftris</string>
+	<string>Swiftris</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>58BA1D5DA230C87744B90E4064999D5C1E2C022E</key>
 		<string>https://github.com/rhb-anme/Swiftris.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>swiftris.xcodeproj</string>
+	<string>Swiftris.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>58BA1D5DA230C87744B90E4064999D5C1E2C022E</key>
