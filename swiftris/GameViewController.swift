@@ -22,12 +22,17 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     var panPointReference:CGPoint?
 
+    @IBOutlet weak var timerLabel: UILabel!
+    
+        
+    
     
     @IBOutlet weak var scoreLabel: UILabel!
     
     var score: Int = 0
     var gcEnabled = Bool()
     var gcDefaultLeaderBoard = String()
+    
     
     
     @IBOutlet weak var levelLabel: UILabel!
@@ -41,6 +46,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     @IBOutlet weak var homeButton: UIButton!
     
     
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var soundButton: UISwitch!
     
     @IBOutlet weak var soundState: UITextField!
@@ -91,20 +97,31 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         
         swiftris = Swiftris()
         swiftris.delegate = self
-
         
+
         // Present the scene
+        // In here you will put the action from the YT video
+        
+        
         skView.presentScene(scene)
         swiftris.beginGame()
         pauseButton.setTitle("Start", forState: UIControlState.Normal)
         //modeLabel.text = (gameMode == GameMode.Classic ? "Classic" : "Timed")
+        
+ 
         pauseGame()
         
         
         soundButton.addTarget(self, action: Selector("stateChanged:"), forControlEvents: UIControlEvents.ValueChanged)
         BackgroundAudio.play()
 
+        
+        
     }
+    
+
+
+
 
     override func prefersStatusBarHidden() -> Bool {
         return true

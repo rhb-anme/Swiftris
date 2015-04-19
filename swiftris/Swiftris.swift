@@ -52,8 +52,17 @@ class Swiftris {
     var level: Int
     var timerFinishedAt: NSDate
     var levelLength = 20.0
+    
+    //Added YT
+    
+    var timerRunning = true
+   
+    
+     //Added YT
     var timer: NSTimer
     var timeLeftAfterPausing: NSTimeInterval
+    
+    
     
     init() {
         score = 0
@@ -76,7 +85,23 @@ class Swiftris {
         
         timer = NSTimer.scheduledTimerWithTimeInterval(levelLength, target: self, selector:Selector("levelUp"), userInfo: nil, repeats: false)
         timerFinishedAt = NSDate(timeIntervalSinceNow: levelLength)
+        
+        self.callForWait()
 
+    }
+    
+    func callForWait(){
+        //setting the delay time 60secs.
+        let delay = 10 * Double(NSEC_PER_SEC)
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue()) {
+            //call the method which have the steps after delay.
+            self.stepsAfterDelay()
+        }
+    }
+    
+    func stepsAfterDelay(){
+        //your code after delay takes place here...
     }
     
     @objc func levelUp() {

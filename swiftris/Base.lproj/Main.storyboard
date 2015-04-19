@@ -143,6 +143,12 @@
                                     <action selector="pauseGame" destination="LVB-YS-i5n" eventType="touchUpInside" id="irq-IU-lKF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlS-JA-zo2">
+                                <rect key="frame" x="103" y="7" width="78" height="39"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -161,6 +167,8 @@
                         <outlet property="scoreLabel" destination="uKH-lO-FfE" id="L4C-W8-nla"/>
                         <outlet property="soundButton" destination="UDF-Y1-lTt" id="iXC-Eq-Kvo"/>
                         <outlet property="soundState" destination="8PL-XU-HZA" id="HCJ-vd-0zH"/>
+                        <outlet property="timeLabel" destination="VlS-JA-zo2" id="xWW-df-RSk"/>
+                        <outlet property="timerLabel" destination="VlS-JA-zo2" id="OpB-Qj-zkG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
@@ -183,7 +191,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="324" y="-121"/>
+            <point key="canvasLocation" x="337" y="-151"/>
         </scene>
     </scenes>
     <resources>

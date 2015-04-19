@@ -26,7 +26,7 @@ class GameKitHelper {
     
     init () {
         gameCenterEnabled = true
-        leaderboardIdentifier = ""
+        leaderboardIdentifier = "SwiftrisLeaderBoard"
     }
     
     func authenticateLocalPlayer(presentingVC : UIViewController) {
